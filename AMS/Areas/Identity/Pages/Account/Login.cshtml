@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         <p class="description text-center">Or Be Classical</p>
-                        <div asp-validation-summary="All" class="text-danger"></div>
+                        @*<div asp-validation-summary="All" class="text-danger"></div>*@
                         <div class="card-body">
                             <div class="input-group">
                                 <div class="input-group-prepend">
@@ -35,8 +35,9 @@
                                     </span>
                                 </div>
                                 <input asp-for="Input.Email" class="form-control" placeholder="Email">
-                                @*<span asp-validation-for="Input.Email" class="text-danger"></span>*@
                             </div>
+                            <span asp-validation-for="Input.Email" class="text-danger offset-2"></span>
+
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
@@ -44,8 +45,8 @@
                                     </span>
                                 </div>
                                 <input asp-for="Input.Password" class="form-control" placeholder="Password">
-                                @*<span asp-validation-for="Input.Password" class="text-danger"></span>*@
                             </div>
+                            <span asp-validation-for="Input.Password" class="text-danger offset-2"></span>
                         </div>
                         <div class="footer text-center">
                             <button type="submit" class="btn btn-primary">Log in</button>

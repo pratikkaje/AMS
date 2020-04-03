@@ -1,0 +1,16 @@
+﻿.card-signup .input-group {
+    padding-bottom: 7px;
+    margin: 27px 0 0 0;
+}
+
+.card {
+    width: 120%;
+}
+
+.logo-image {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}

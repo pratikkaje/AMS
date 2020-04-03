@@ -27,6 +27,7 @@ The above copyright notice and this permission notice shall be included in all c
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <!-- CSS Files -->
     <link href="~/css/material-kit.css?v=2.0.7" rel="stylesheet" />
+    <link href="~/css/customstyle.css" rel="stylesheet" />
     @RenderSection("Css", required: false)
 </head>
 
@@ -34,6 +35,11 @@ The above copyright notice and this permission notice shall be included in all c
     <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100"
          id="sectionsNav">
         <div class="container">
+            <a class="navbar-brand" href="/">
+                <div class="logo-image">
+                    <img src="~/images/logo.png" class="img-fluid"/>
+                </div>
+            </a>
             <div class="navbar-translate">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -44,7 +50,7 @@ The above copyright notice and this permission notice shall be included in all c
                 </button>
             </div>
             <div class="collapse navbar-collapse">
-                    <partial name="_LoginPartial"/>
+                <partial name="_LoginPartial" />
             </div>
         </div>
     </nav>
