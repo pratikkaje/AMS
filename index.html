@@ -186,6 +186,24 @@
       <p>© 2025 Ashwini Foundation Multipurpose Society · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
     </footer>
   </main>
+<!-- Admission Notice Modal -->
+<div class="modal fade" id="admissionNoticeModal" tabindex="-1" aria-labelledby="admissionNoticeLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <img src="notice.webp" alt="Admission Notice" class="img-fluid w-100">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const modal = new bootstrap.Modal(document.getElementById('admissionNoticeModal'));
+    modal.show();
+  });
+</script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"></script>
