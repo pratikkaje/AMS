@@ -16,38 +16,34 @@
   </style>
 </head>
 
-<body>
-  <div class="container" id="home">
-    <header>
-      <nav class="navbar navbar-expand-md navbar-light bg-white">
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
-            <ul class="navbar-nav mb-2 mb-md-0">
-              <li class="nav-item">
-                <a href="#" class="nav-link active" aria-current="page">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#programs" class="nav-link">Our Programs</a>
-              </li>
-              <li class="nav-item">
-                <a href="#academics" class="nav-link">Academics</a>
-              </li>
-              <li class="nav-item">
-                <a href="#aboutus" class="nav-link">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a href="#contact_us" class="nav-link">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-  </div>
+<body id="home">
+  <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+        <ul class="navbar-nav mb-2 mb-md-0">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#programs" class="nav-link">Our Programs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#academics" class="nav-link">Academics</a>
+          </li>
+          <li class="nav-item">
+            <a href="#aboutus" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact_us" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <main>
     <div class="px-4 py-5 my-5 text-center">
       <img src="logo.webp" class="rounded-circle mb-3 img-fluid d-none d-md-block mx-auto d-block"
@@ -60,11 +56,11 @@
           Located in Eklaspur, we proudly offer English Medium education from Nursery to Grade 12 with transportation
           facilities, caring staff, and a safe, nurturing environment.
         </p>
-        <hr class="featurette-divider">
+        <hr class="featurette-divider" id="programs">
       </div>
     </div>
 
-    <div class="container marketing" id="programs"> <!-- Three columns of text below the carousel -->
+    <div class="container marketing mt-5" > <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-center">
           <img src="kip_students.webp" alt="Kids International Preschool" class="rounded-circle mb-3 img-fluid"
@@ -100,8 +96,8 @@
           <!-- <p><a class="btn btn-secondary" href="#">View details »</a></p> -->
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row --> <!-- START THE FEATURETTES -->
-      <hr class="featurette-divider">
-      <div class="row featurette align-items-center" id="academics">
+      <hr class="featurette-divider" id="academics">
+      <div class="row featurette align-items-center" >
         <div class="col-md-7">
           <h2 class="fw-normal lh-1">Academics</h2>
           <p class="lead">We follow a structured curriculum designed to develop strong fundamentals, critical thinking,
@@ -120,9 +116,10 @@
         <div class="col-md-5">
           <img src="award-winners.webp" class="img-thumbnail" alt="award winners" loading="lazy">
         </div>
+        <hr class="featurette-divider" id="aboutus">
       </div>
-      <hr class="featurette-divider">
-      <div class="row featurette align-items-center" id="aboutus">
+      
+      <div class="row featurette align-items-center" >
         <div class="col-md-7 order-md-2">
           <h2 class="fw-normal lh-1">About Us</h2>
           <p class="lead">Ashwini Memorial School began with a single thought — to provide quality education to every
@@ -194,27 +191,27 @@
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"></script>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-      link.addEventListener('click', function () {
-        navLinks.forEach(l => l.classList.remove('active'));
-        this.classList.add('active');
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+          navLinks.forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
+        });
       });
-    });
 
-    // Back to top activates Home link
-    const backToTop = document.getElementById('backToTop');
-    const homeLink = Array.from(navLinks).find(link => link.getAttribute('href') === '#' || link.getAttribute('href') === '#home');
-    if (backToTop && homeLink) {
-      backToTop.addEventListener('click', function () {
-        navLinks.forEach(l => l.classList.remove('active'));
-        homeLink.classList.add('active');
-      });
-    }
-  });
-</script>
+      // Back to top activates Home link
+      const backToTop = document.getElementById('backToTop');
+      const homeLink = Array.from(navLinks).find(link => link.getAttribute('href') === '#' || link.getAttribute('href') === '#home');
+      if (backToTop && homeLink) {
+        backToTop.addEventListener('click', function () {
+          navLinks.forEach(l => l.classList.remove('active'));
+          homeLink.classList.add('active');
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
