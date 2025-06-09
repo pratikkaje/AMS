@@ -161,7 +161,7 @@
       <hr class="featurette-divider"> <!-- /END THE FEATURETTES -->
     </div>
     <footer class="container">
-      <p class="float-end"><a href="#home">Back to top</a></p>
+      <p class="float-end"><a href="#home" id="backToTop">Back to top</a></p>
       <p>© 2025 Ashwini Foundation Multipurpose Society</p>
     </footer>
   </main>
@@ -194,6 +194,37 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const navLinks = document.querySelectorAll('.nav-link');
+
+      const sections = [
+        { id: 'home', link: null },
+        { id: 'programs', link: null },
+        { id: 'academics', link: null },
+        { id: 'aboutus', link: null },
+        { id: 'contact_us', link: null }
+      ];      
+
+      sections.forEach(section => {
+        section.link = Array.from(navLinks).find(link => link.getAttribute('href') === '#' + section.id);
+      });
+
+      function onScroll() {
+        let scrollPos = window.scrollY + 100; // Offset for sticky navbar
+        let currentSection = sections[0];
+
+        for (let section of sections) {
+          const el = document.getElementById(section.id);
+          if (el && el.offsetTop <= scrollPos) {
+            currentSection = section;
+          }
+        }
+
+        navLinks.forEach(link => link.classList.remove('active'));
+        if (currentSection.link) currentSection.link.classList.add('active');
+      } 
+      
+      window.addEventListener('scroll', onScroll);
+      onScroll();
+
       navLinks.forEach(link => {
         link.addEventListener('click', function () {
           navLinks.forEach(l => l.classList.remove('active'));
@@ -201,7 +232,6 @@
         });
       });
 
-      // Back to top activates Home link
       const backToTop = document.getElementById('backToTop');
       const homeLink = Array.from(navLinks).find(link => link.getAttribute('href') === '#' || link.getAttribute('href') === '#home');
       if (backToTop && homeLink) {
