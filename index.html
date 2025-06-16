@@ -14,6 +14,23 @@
       padding-top: 0 !important;
       background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 25%, rgba(231, 231, 231, 1) 100%);
     }
+
+    .admission-highlight {
+      color: #fff !important;
+      /*background: #dc3545 !important;*/
+      /* Bootstrap danger color */
+      /*border-radius: 0.5rem;*/
+      /*padding: 0.25rem 0.25rem;*/
+      animation: blink 1.25s steps(2, start) infinite;
+      font-weight: bold;
+      /*box-shadow: 0 0 8px #dc3545;*/
+    }
+
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
   </style>
 
 </head>
@@ -42,10 +59,16 @@
           <li class="nav-item">
             <a href="#contact_us" class="nav-link">Contact Us</a>
           </li>
+          <li class="nav-item admission-highlight d-none d-md-block">
+            <a href="./admissionform.html" class="nav-link">Admission Form 25-26</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
+  <a href="#" class="btn btn-danger admission-highlight d-block d-md-none text-center w-100 my-2" style="max-width: 350px; margin-left:auto; margin-right:auto;">
+  Admission Form 25-26
+  </a>
   <main>
     <div class="px-4 py-5 my-5 text-center">
       <img src="logo.webp" class="rounded-circle mb-3 img-fluid d-none d-md-block mx-auto d-block"
