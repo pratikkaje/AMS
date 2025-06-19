@@ -44,16 +44,15 @@
                         </div>
                     </div>
                 </div>
-                <form>
+                <form action="https://script.google.com/macros/s/AKfycbwdHuFtSWwZ1LMD0UvYNpTE4O5ZEYFL7VqbSnEFV5xqYk9_FUWCVxy5Hn1gdMpfZ34E/exec" method="POST">
                     <div class="mb-3">
                         <label class="form-label fw-bold">To The Principal</label>
-                        <textarea class="form-control" rows="2"
-                            readonly>I, the undersigned, hereby apply for the admission to _____________________________. I, further declare that I have read the college Prospectus carefully and undertake to abide by all the rules and regulations of the college.</textarea>
+                        <textarea class="form-control" rows="2" readonly>I, the undersigned, hereby apply for the admission to _____________________________. I, further declare that I have read the college Prospectus carefully and undertake to abide by all the rules and regulations of the college.</textarea>
                     </div>
                     <div class="mb-3 row">
                         <label class="col-sm-3 col-form-label">Signature of the Applicant</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control mb-2" placeholder="Name">
+                            <input type="text" class="form-control mb-2" placeholder="Name" name="Name">
                         </div>
                     </div>
                     <hr>
@@ -61,11 +60,11 @@
                     <div class="row mb-3">
                         <div class="col-md-6 mb-2">
                             <label class="form-label">Class in which Admission required</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="Class">
                         </div>
                         <div class="col-md-6 mb-2">
                             <label class="form-label">Faculty</label>
-                            <select class="form-select">
+                            <select class="form-select" name="Faculty">
                                 <option>Arts</option>
                                 <option>Commerce</option>
                                 <option>Science</option>
@@ -73,52 +72,51 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Subjects (Consult Admission, Guidance &amp; Counseling
-                            Committee)</label>
+                        <label class="form-label">Subjects (Consult Admission, Guidance &amp; Counseling Committee)</label>
                         <div class="row g-2">
-                            <div class="col-6 col-md-4"><input type="text" class="form-control" placeholder="1"></div>
-                            <div class="col-6 col-md-4"><input type="text" class="form-control" placeholder="2"></div>
-                            <div class="col-6 col-md-4"><input type="text" class="form-control" placeholder="3"></div>
-                            <div class="col-6 col-md-4"><input type="text" class="form-control" placeholder="4"></div>
-                            <div class="col-6 col-md-4"><input type="text" class="form-control" placeholder="5"></div>
-                            <div class="col-6 col-md-4"><input type="text" class="form-control" placeholder="6"></div>
-                            <div class="col-6 col-md-4"><input type="text" class="form-control" placeholder="7"></div>
-                            <div class="col-6 col-md-4"><input type="text" class="form-control" placeholder="8"></div>
-                            <div class="col-6 col-md-4"><input type="text" class="form-control" placeholder="9"></div>
+                            <div class="col-6 col-md-4"><input type="text" class="form-control" placeholder="1" name="Subject1"></div>
+                            <div class="col-6 col-md-4"><input type="text" class="form-control" placeholder="2" name="Subject2"></div>
+                            <div class="col-6 col-md-4"><input type="text" class="form-control" placeholder="3" name="Subject3"></div>
+                            <div class="col-6 col-md-4"><input type="text" class="form-control" placeholder="4" name="Subject4"></div>
+                            <div class="col-6 col-md-4"><input type="text" class="form-control" placeholder="5" name="Subject5"></div>
+                            <div class="col-6 col-md-4"><input type="text" class="form-control" placeholder="6" name="Subject6"></div>
+                            <div class="col-6 col-md-4"><input type="text" class="form-control" placeholder="7" name="Subject7"></div>
+                            <div class="col-6 col-md-4"><input type="text" class="form-control" placeholder="8" name="Subject8"></div>
+                            <div class="col-6 col-md-4"><input type="text" class="form-control" placeholder="9" name="Subject9"></div>
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <div class="col-md-6 mb-2">
                             <label class="form-label">Name of Applicant (In English)</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="Name_English">
                         </div>
                         <div class="col-md-6 mb-2">
                             <label class="form-label">Name of Applicant (In Marathi)</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="Name_Marathi">
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <div class="col-md-3 mb-2">
                             <label class="form-label">Date of Birth</label>
-                            <input type="date" class="form-control">
+                            <input type="date" class="form-control" name="DOB">
                         </div>
                         <div class="col-md-3 mb-2">
                             <label class="form-label">Place of Birth</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="POB">
                         </div>
                         <div class="col-md-3 mb-2">
                             <label class="form-label">Tehsil</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="Tehsil">
                         </div>
                         <div class="col-md-3 mb-2">
                             <label class="form-label">District</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="District">
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <div class="col-md-3 mb-2">
                             <label class="form-label">Gender</label>
-                            <select class="form-select">
+                            <select class="form-select" name="Gender">
                                 <option>Female</option>
                                 <option>Male</option>
                                 <option>T.G.</option>
@@ -126,25 +124,25 @@
                         </div>
                         <div class="col-md-3 mb-2">
                             <label class="form-label">Religion</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="Religion">
                         </div>
                         <div class="col-md-3 mb-2">
                             <label class="form-label">Mother Tongue</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="MotherTongue">
                         </div>
                         <div class="col-md-3 mb-2">
                             <label class="form-label">Caste</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="Caste">
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <div class="col-md-3 mb-2">
                             <label class="form-label">Sub Caste</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="SubCaste">
                         </div>
                         <div class="col-md-3 mb-2">
                             <label class="form-label">Category</label>
-                            <select class="form-select">
+                            <select class="form-select" name="Category">
                                 <option>SC</option>
                                 <option>ST</option>
                                 <option>VJ</option>
@@ -158,143 +156,142 @@
                         </div>
                         <div class="col-md-3 mb-2">
                             <label class="form-label">Aadhar Card No.</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="Aadhar">
                         </div>
                         <div class="col-md-3 mb-2">
                             <label class="form-label">Voter ID Card No.</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="VoterID">
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <div class="col-md-3 mb-2">
                             <label class="form-label">Mobile No.</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="Mobile">
                         </div>
                         <div class="col-md-3 mb-2">
                             <label class="form-label">Email ID</label>
-                            <input type="email" class="form-control">
+                            <input type="email" class="form-control" name="Email">
                         </div>
                         <div class="col-md-3 mb-2">
                             <label class="form-label">Blood Group</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="BloodGroup">
                         </div>
                         <div class="col-md-3 mb-2">
                             <label class="form-label">Weight / Height / Digital No.</label>
-                            <input type="text" class="form-control" placeholder="Weight / Height / Digital No.">
+                            <input type="text" class="form-control" placeholder="Weight / Height / Digital No." name="WeightHeightDigital">
                         </div>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Whether Physically Disabled</label>
                         <div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="disabled" id="disabledYes"
+                                <input class="form-check-input" type="radio" name="Disabled" id="disabledYes"
                                     value="Yes">
                                 <label class="form-check-label" for="disabledYes">Yes</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="disabled" id="disabledNo" value="No">
+                                <input class="form-check-input" type="radio" name="Disabled" id="disabledNo" value="No">
                                 <label class="form-check-label" for="disabledNo">No</label>
                             </div>
-                            <span class="ms-2">(If yes, attach Disability Certificate)</span>
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <div class="col-md-6 mb-2">
                             <label class="form-label">Name of Father / Guardian</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="FatherGuardianName">
                         </div>
                         <div class="col-md-6 mb-2">
                             <label class="form-label">Educational Qualification</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="FatherGuardianQualification">
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <div class="col-md-4 mb-2">
                             <label class="form-label">Occupation</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="FatherGuardianOccupation">
                         </div>
                         <div class="col-md-4 mb-2">
                             <label class="form-label">Phone</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="FatherGuardianPhone">
                         </div>
                         <div class="col-md-4 mb-2">
                             <label class="form-label">Mobile</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="FatherGuardianMobile">
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <div class="col-md-6 mb-2">
                             <label class="form-label">Full Name of Mother</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="MotherName">
                         </div>
                         <div class="col-md-6 mb-2">
                             <label class="form-label">Educational Qualification</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="MotherQualification">
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <div class="col-md-4 mb-2">
                             <label class="form-label">Occupation</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="MotherOccupation">
                         </div>
                         <div class="col-md-4 mb-2">
                             <label class="form-label">Phone</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="MotherPhone">
                         </div>
                         <div class="col-md-4 mb-2">
                             <label class="form-label">Mobile</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="MotherMobile">
                         </div>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Local Address</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="LocalAddress">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Permanent Address</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="PermanentAddress">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Details of last Qualifying Examination</label>
                         <div class="row g-2">
                             <div class="col-md-4">
-                                <input type="text" class="form-control" placeholder="Name of Exam">
+                                <input type="text" class="form-control" placeholder="Name of Exam" name="LastExamName">
                             </div>
                             <div class="col-md-2">
-                                <input type="text" class="form-control" placeholder="Roll No">
+                                <input type="text" class="form-control" placeholder="Roll No" name="LastExamRollNo">
                             </div>
                             <div class="col-md-2">
-                                <input type="text" class="form-control" placeholder="Total Marks">
+                                <input type="text" class="form-control" placeholder="Total Marks" name="LastExamTotalMarks">
                             </div>
                             <div class="col-md-2">
-                                <input type="text" class="form-control" placeholder="Marks Obtained">
+                                <input type="text" class="form-control" placeholder="Marks Obtained" name="LastExamMarksObtained">
                             </div>
                             <div class="col-md-2">
-                                <input type="text" class="form-control" placeholder="Percentage">
+                                <input type="text" class="form-control" placeholder="Percentage" name="LastExamPercentage"> 
                             </div>
                         </div>
                         <div class="row g-2 mt-2">
                             <div class="col-md-2">
-                                <input type="text" class="form-control" placeholder="Result">
+                                <input type="text" class="form-control" placeholder="Result" name="LastExamResult">
                             </div>
                             <div class="col-md-10">
-                                <input type="text" class="form-control" placeholder="Subjects offered">
+                                <input type="text" class="form-control" placeholder="Subjects offered" name="LastExamSubjects">
                             </div>
                         </div>
                         <div class="row g-2 mt-2">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Name of Board / University">
+                                <input type="text" class="form-control" placeholder="Name of Board / University" name="LastExamBoardUniversity">
                             </div>
                             <div class="col-md-3">
-                                <input type="text" class="form-control" placeholder="Medium of Examination">
+                                <input type="text" class="form-control" placeholder="Medium of Examination" name="LastExamMedium">
                             </div>
                             <div class="col-md-3">
-                                <input type="text" class="form-control" placeholder="University Enrollment No">
+                                <input type="text" class="form-control" placeholder="University Enrollment No" name="LastExamUniversityEnrollment">
                             </div>
                         </div>
                         <div class="row g-2 mt-2">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Type of Institution">
+                                <input type="text" class="form-control" placeholder="Type of Institution" name="LastExamInstitutionType">
                             </div>
                         </div>
                     </div>
